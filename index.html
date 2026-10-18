@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luyện tập thì hiện tại đơn — 20 câu</title>
+<style>
+:root{color-scheme:light;--ink:#1d2939;--muted:#667085;--line:#d0d5dd;--panel:#f8fafc;--white:#fff;--green:#157347;--greenbg:#eaf8ef;--red:#b42318;--redbg:#fff0f0;--amber:#935c00;--amberbg:#fff8e6;--blue:#175cd3}
+*{box-sizing:border-box}body{margin:0;background:#f1f5f9;color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}.app{max-width:850px;margin:0 auto;padding:22px 14px 44px}.hero,.card,.summary{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 4px 16px #1018280a}.hero{margin-bottom:14px}.eyebrow{font-size:12px;letter-spacing:.08em;font-weight:800;color:var(--blue);text-transform:uppercase}.hero h1{font-size:clamp(24px,4vw,34px);line-height:1.18;margin:8px 0 10px}.muted{color:var(--muted);font-size:14px}.toolbar{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin:14px 0}.pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:5px 11px;background:#fff;font-size:13px;font-weight:650}.progress{height:8px;border-radius:99px;overflow:hidden;background:#e4e7ec;margin:10px 0 18px}.progress span{display:block;height:100%;width:0;background:#1570ef;transition:width .25s}.question-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}.question-title{font-size:clamp(21px,3vw,27px);line-height:1.35;margin:15px 0 5px}.translation{color:var(--muted);margin:0 0 17px}.option{display:flex;align-items:flex-start;gap:11px;width:100%;text-align:left;padding:13px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);font:inherit;margin:8px 0;cursor:pointer;transition:border-color .15s,background .15s}.option:hover:not(:disabled){border-color:#6699f8;background:#f8fbff}.letter{flex:0 0 29px;width:29px;height:29px;border-radius:8px;display:grid;place-items:center;background:#f2f4f7;font-size:13px;font-weight:800}.option:disabled{cursor:default}.option.wrong,.input-wrong{border:2px solid var(--red)!important;background:var(--redbg)!important;color:#7a271a}.option.right{border:2px solid var(--green)!important;background:var(--greenbg)!important;color:#14532d}.input-right{border:2px solid var(--green)!important;background:var(--greenbg)!important}.input-wrong{border:2px solid var(--red)!important;background:var(--redbg)!important}.blank-row{border:1px solid var(--line);border-radius:13px;padding:14px;background:var(--panel);margin:13px 0}.blank-row label{display:block;font-weight:750;margin-bottom:8px}.answer-input,input[type=text],textarea,select{font:inherit;width:100%;padding:11px 12px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}textarea{min-height:88px;resize:vertical}input:focus,textarea:focus,select:focus{outline:3px solid #dbeafe;border-color:#84adff}.btn{border:0;border-radius:11px;padding:11px 16px;background:#175cd3;color:white;font:inherit;font-weight:750;cursor:pointer}.btn:hover{filter:brightness(.96)}.btn:disabled{opacity:.5;cursor:not-allowed}.btn.secondary{background:#fff;border:1px solid var(--line);color:var(--ink)}.btn.danger{background:#b42318}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}.note{border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:14px;margin:14px 0}.note.good{border-left:5px solid var(--green);background:var(--greenbg)}.note.bad{border-left:5px solid var(--red);background:var(--redbg)}.note.info{border-left:5px solid var(--blue)}.note p{margin:7px 0}.why-form{margin-top:16px}.why-form h3{font-size:19px;margin:0 0 5px}.field{padding:12px;border:1px solid var(--line);border-radius:12px;margin:10px 0;background:#fff}.field label{display:block;font-weight:750;margin-bottom:7px}.field small{display:block;color:var(--muted);margin-top:5px}.required{color:var(--red)}.hide{display:none!important}.correct-banner{font-size:18px;font-weight:800;color:var(--green)}.score-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:16px 0}.score-box{border:1px solid var(--line);border-radius:12px;padding:13px;background:var(--panel)}.score-num{font-size:25px;font-weight:850}.footnote{font-size:12px;color:var(--muted);margin-top:16px;border-top:1px solid var(--line);padding-top:12px}.question-red{border:2px solid #e36b63}.error{color:var(--red);font-size:14px;font-weight:650;margin-top:8px}@media(max-width:560px){.app{padding:12px 9px 30px}.hero,.card,.summary{padding:16px}.score-grid{grid-template-columns:1fr}.question-title{font-size:22px}}
+</style>
+</head>
+<body>
+<div class="app" id="app">
+  <section class="hero">
+    <div class="eyebrow">English practice · A1–A2</div>
+    <h1>Thì hiện tại đơn — 20 câu tương tác</h1>
+    <p>Gồm 10 câu trắc nghiệm và 10 câu tự luận điền dạng đúng của động từ trong ngoặc. Trả lời đúng sẽ phát âm báo và tự chuyển câu. Nếu sai, bạn phải giải thích cách suy nghĩ; hệ thống sẽ phản hồi rồi đưa câu sai trở lại vòng ôn.</p>
+    <div class="toolbar"><span class="pill">🔊 Âm báo khi đúng</span><span class="pill">🔴 Theo dõi câu sai</span><span class="pill">🔁 Ôn đến khi đúng</span></div>
+    <div class="actions"><button class="btn" id="startBtn">Bắt đầu luyện tập</button></div>
+    <p class="muted">Âm lượng phụ thuộc âm lượng thiết bị/trình duyệt. Nhấn nút bắt đầu rồi chọn đáp án để cho phép phát âm thanh.</p>
+  </section>
+  <main id="stageArea"></main>
+</div>
+<script>
+(() => {
+'use strict';
+const questions = [
+ {id:1,type:'mcq',sentence:'My brother ___ football every Sunday.',vi:'Anh trai/em trai tôi chơi bóng đá vào mỗi Chủ nhật.',options:['play','plays','playing','is play'],answer:'plays',correctIndex:1,subject:'My brother',subjectAliases:['my brother','brother','he'],number:'singular',clue:'every Sunday — thói quen lặp lại',clueAliases:['every sunday','sunday','every week','thoi quen','lap lai','habit','routine'],rule:'My brother là chủ ngữ ngôi thứ ba số ít nên động từ khẳng định thêm -s. “Every Sunday” cho biết hành động lặp lại theo thói quen.',focus:'third-s'},
+ {id:2,type:'fill',sentence:'Lan (study) English after dinner every day.',vi:'Lan học tiếng Anh sau bữa tối mỗi ngày.',options:null,answer:'studies',accepted:['studies'],subject:'Lan',subjectAliases:['lan','she'],number:'singular',clue:'every day — thói quen hằng ngày',clueAliases:['every day','daily','hang ngay','thoi quen','habit','routine'],rule:'Lan là tên riêng số ít nên động từ thêm -s. Với study, đổi phụ âm + y thành -ies: studies.',focus:'third-s'},
+ {id:3,type:'mcq',sentence:'They ___ to school by bus every day.',vi:'Họ đi học bằng xe buýt mỗi ngày.',options:['goes','go','going','are go'],answer:'go',correctIndex:1,subject:'They',subjectAliases:['they'],number:'plural',clue:'every day — thói quen hằng ngày',clueAliases:['every day','daily','hang ngay','thoi quen','habit','routine'],rule:'They là chủ ngữ số nhiều nên dùng động từ nguyên mẫu “go”, không thêm -s. “Every day” chỉ thói quen.',focus:'plural'},
+ {id:4,type:'fill',sentence:'My parents (not / watch) TV in the morning.',vi:'Bố mẹ tôi không xem TV vào buổi sáng.',options:null,answer:"don't watch",accepted:["don't watch",'do not watch'],subject:'My parents',subjectAliases:['my parents','parents','they'],number:'plural',clue:'in the morning — thói quen theo ngữ cảnh',clueAliases:['in the morning','morning','thoi quen','routine','hang ngay','daily'],rule:'My parents là chủ ngữ số nhiều nên phủ định dùng do not/don’t + động từ nguyên mẫu: don’t watch.',focus:'auxiliary'},
+ {id:5,type:'mcq',sentence:'___ your sister usually read before bed?',vi:'Chị/em gái của bạn thường đọc sách trước khi đi ngủ phải không?',options:['Do','Does','Is','Are'],answer:'Does',correctIndex:1,subject:'your sister',subjectAliases:['your sister','sister','she'],number:'singular',clue:'usually — trạng từ chỉ tần suất',clueAliases:['usually','frequency','adverb','tan suat','thuong','thoi quen','habit'],rule:'Your sister là chủ ngữ số ít nên câu hỏi hiện tại đơn dùng Does + chủ ngữ + động từ nguyên mẫu. “Read” không thêm -s sau Does.',focus:'do-does'},
+ {id:6,type:'fill',sentence:'Water (freeze) at 0°C.',vi:'Nước đóng băng ở 0°C.',options:null,answer:'freezes',accepted:['freezes'],subject:'Water',subjectAliases:['water','it'],number:'singular',clue:'at 0°C — sự thật khoa học',clueAliases:['0 c','0°c','at 0','scientific fact','general truth','su that khoa hoc','su that hien nhien','fact','truth'],rule:'Water là danh từ không đếm được và được xem là chủ ngữ số ít, nên dùng freezes. Câu mô tả sự thật khoa học.',focus:'third-s'},
+ {id:7,type:'mcq',sentence:'He ___ meat because he is vegetarian.',vi:'Anh ấy không ăn thịt vì anh ấy ăn chay.',options:['don’t eat',"doesn't eat", "doesn't eats",'isn’t eat'],answer:"doesn't eat",correctIndex:1,subject:'He',subjectAliases:['he'],number:'singular',clue:'because he is vegetarian — thông tin chỉ thói quen/lối sống',clueAliases:['vegetarian','thoi quen','habit','lifestyle','loi song','usually','always','never'],rule:'He là ngôi thứ ba số ít nên phủ định dùng doesn’t + động từ nguyên mẫu: doesn’t eat. Không thêm -s vào eat sau doesn’t.',focus:'doesnt-base'},
+ {id:8,type:'fill',sentence:'I (have) breakfast at 7 a.m. every weekday.',vi:'Tôi ăn sáng lúc 7 giờ mỗi ngày trong tuần.',options:null,answer:'have',accepted:['have'],subject:'I',subjectAliases:['i'],number:'singular',clue:'every weekday — thói quen thường xuyên',clueAliases:['every weekday','weekday','every day','daily','thoi quen','habit','routine'],rule:'I là chủ ngữ số ít về mặt ngữ pháp nhưng đi với have, không dùng has. “Every weekday” chỉ thói quen.',focus:'have-has'},
+ {id:9,type:'mcq',sentence:'Anna and Tom ___ tennis on Saturdays.',vi:'Anna và Tom chơi quần vợt vào các ngày thứ Bảy.',options:['plays','play','playing','does play'],answer:'play',correctIndex:1,subject:'Anna and Tom',subjectAliases:['anna and tom','anna','tom','they'],number:'plural',clue:'on Saturdays — hành động lặp lại mỗi thứ Bảy',clueAliases:['on saturdays','saturdays','every saturday','thu bay','thoi quen','habit','routine'],rule:'Anna and Tom là hai người, tương đương they, nên là chủ ngữ số nhiều và dùng play.',focus:'plural'},
+ {id:10,type:'fill',sentence:'The bus (leave) at 8:00 every morning.',vi:'Xe buýt khởi hành lúc 8 giờ mỗi buổi sáng.',options:null,answer:'leaves',accepted:['leaves'],subject:'The bus',subjectAliases:['the bus','bus','it'],number:'singular',clue:'every morning — lịch trình lặp lại',clueAliases:['every morning','morning','every day','schedule','lich trinh','thoi quen','routine'],rule:'The bus là chủ ngữ số ít nên leave thêm -s thành leaves. Lịch trình cố định cũng có thể dùng hiện tại đơn.',focus:'third-s'},
+ {id:11,type:'mcq',sentence:'My teacher never ___ late for class.',vi:'Giáo viên của tôi không bao giờ đến lớp muộn.',options:['arrive','arrives','arriving','is arrive'],answer:'arrives',correctIndex:1,subject:'My teacher',subjectAliases:['my teacher','teacher','he','she'],number:'singular',clue:'never — trạng từ chỉ tần suất',clueAliases:['never','frequency','adverb','tan suat','khong bao gio','thoi quen','habit'],rule:'My teacher là chủ ngữ số ít nên arrive thêm -s thành arrives. Never là trạng từ tần suất, diễn tả điều không bao giờ xảy ra.',focus:'third-s'},
+ {id:12,type:'fill',sentence:'We (not / be) late for class.',vi:'Chúng tôi không đến lớp muộn.',options:null,answer:"aren't",accepted:["aren't",'are not'],subject:'We',subjectAliases:['we'],number:'plural',clue:'Câu phủ định với động từ be; không cần dấu hiệu thời gian rõ ràng',clueAliases:['be','not be','phu dinh','negative','are not','arent','khong co dau hieu','ngu phap','dong tu be'],rule:'Với chủ ngữ we, động từ be ở hiện tại đơn là are. Phủ định là are not hoặc aren’t.',focus:'be'},
+ {id:13,type:'mcq',sentence:'The Earth ___ around the Sun.',vi:'Trái Đất quay quanh Mặt Trời.',options:['move','moves','moving','is move'],answer:'moves',correctIndex:1,subject:'The Earth',subjectAliases:['the earth','earth','it'],number:'singular',clue:'Sự thật hiển nhiên/khoa học',clueAliases:['scientific fact','general truth','truth','fact','su that','khoa hoc','hien nhien'],rule:'The Earth là chủ ngữ số ít nên move thêm -s thành moves. Hiện tại đơn diễn tả sự thật khoa học.',focus:'fact'},
+ {id:14,type:'fill',sentence:'My little brother (have) two toy cars.',vi:'Em trai tôi có hai chiếc ô tô đồ chơi.',options:null,answer:'has',accepted:['has'],subject:'My little brother',subjectAliases:['my little brother','little brother','brother','he'],number:'singular',clue:'Không có dấu hiệu thời gian rõ ràng; động từ have diễn tả sự sở hữu',clueAliases:['have','has','possession','so huu','khong co dau hieu','present simple','hien tai don'],rule:'My little brother là chủ ngữ ngôi thứ ba số ít. Have đổi thành has với he/she/it hoặc danh từ số ít.',focus:'have-has'},
+ {id:15,type:'mcq',sentence:'She ___ like spicy food.',vi:'Cô ấy không thích đồ ăn cay.',options:["don't", "doesn't", "isn't",'not'],answer:"doesn't",correctIndex:1,subject:'She',subjectAliases:['she'],number:'singular',clue:'Cấu trúc câu phủ định hiện tại đơn',clueAliases:['negative','phu dinh','does not','doesnt','structure','cau phu dinh','hien tai don'],rule:'She là chủ ngữ ngôi thứ ba số ít nên dùng doesn’t trong câu phủ định. Đầy đủ là She doesn’t like…; động từ like giữ nguyên mẫu.',focus:'auxiliary'},
+ {id:16,type:'fill',sentence:'You (not / need) a calculator for this exercise.',vi:'Bạn không cần máy tính cho bài tập này.',options:null,answer:"don't need",accepted:["don't need",'do not need'],subject:'You',subjectAliases:['you'],number:'plural',clue:'Câu phủ định hiện tại đơn; you đi với do not/don’t',clueAliases:['negative','phu dinh','dont','do not','you','tro dong tu','hien tai don'],rule:'You dùng do not/don’t trong câu phủ định, sau đó là động từ nguyên mẫu: don’t need.',focus:'auxiliary'},
+ {id:17,type:'mcq',sentence:'___ they work on weekends?',vi:'Họ có làm việc vào cuối tuần không?',options:['Does','Do','Are','Is'],answer:'Do',correctIndex:1,subject:'they',subjectAliases:['they'],number:'plural',clue:'Câu hỏi hiện tại đơn với động từ thường',clueAliases:['question','cau hoi','interrogative','do they','hien tai don','weekends'],rule:'They đi với Do trong câu hỏi hiện tại đơn: Do + they + động từ nguyên mẫu?',focus:'do-does'},
+ {id:18,type:'fill',sentence:'Our teacher (teach) English on Mondays.',vi:'Giáo viên của chúng tôi dạy tiếng Anh vào các ngày thứ Hai.',options:null,answer:'teaches',accepted:['teaches'],subject:'Our teacher',subjectAliases:['our teacher','teacher','he','she'],number:'singular',clue:'on Mondays — lịch trình/thói quen lặp lại',clueAliases:['on mondays','mondays','every monday','thu hai','thoi quen','schedule','lich trinh','habit'],rule:'Our teacher là chủ ngữ số ít. Teach kết thúc bằng -ch nên thêm -es: teaches.',focus:'es'},
+ {id:19,type:'mcq',sentence:'I ___ understand this question.',vi:'Tôi không hiểu câu hỏi này.',options:["doesn't", "don't", "am not",'not'],answer:"don't",correctIndex:1,subject:'I',subjectAliases:['i'],number:'singular',clue:'Câu phủ định hiện tại đơn; I đi với do not/don’t',clueAliases:['negative','phu dinh','dont','do not','i','tro dong tu','hien tai don'],rule:'I đi với don’t trong câu phủ định hiện tại đơn: I don’t understand. Không dùng doesn’t với I.',focus:'auxiliary'},
+ {id:20,type:'fill',sentence:'My friends (play) football after school.',vi:'Bạn bè của tôi chơi bóng đá sau giờ học.',options:null,answer:'play',accepted:['play'],subject:'My friends',subjectAliases:['my friends','friends','they'],number:'plural',clue:'after school — hoạt động thường xuyên theo ngữ cảnh',clueAliases:['after school','sau gio hoc','thoi quen','routine','habit','usually','every day'],rule:'My friends là chủ ngữ số nhiều nên dùng play, không thêm -s. After school gợi ý hoạt động thường xuyên sau giờ học.',focus:'plural'}
+];
+const appStage = document.getElementById('stageArea');
+let started=false, phase='main', mainPos=0, currentId=null, view='start', retrySet=new Set(), retryOrder=[], retryPos=0, retryRound=0;
+let firstCorrect=new Set(), everWrong=new Set(), wrongCounts={}, recentPick=null, feedbackText='', currentInput='', explanationError='', lastReason='', lastSubject='', lastNumber='', lastClue='';
+let timer=null;
+const byId=id=>questions.find(q=>q.id===id);
+function normalize(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/['’]/g,'').replace(/[^a-z0-9°]+/g,' ').trim();}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function acceptedAnswer(q){return [q.answer,...(q.accepted||[])].map(normalize);}
+function isCorrect(q,value){return acceptedAnswer(q).includes(normalize(value));}
+function beep(){try{const AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;const ctx=new AC();if(ctx.state==='suspended')ctx.resume();const notes=[660,830,1046,1320];notes.forEach((hz,i)=>{const t=ctx.currentTime+i*.13,osc=ctx.createOscillator(),gain=ctx.createGain();osc.type='sine';osc.frequency.setValueAtTime(hz,t);gain.gain.setValueAtTime(.0001,t);gain.gain.exponentialRampToValueAtTime(.34,t+.025);gain.gain.setValueAtTime(.34,t+.085);gain.gain.exponentialRampToValueAtTime(.0001,t+.22);osc.connect(gain);gain.connect(ctx.destination);osc.start(t);osc.stop(t+.23);});setTimeout(()=>ctx.close(),850);}catch(e){}}
+function currentQ(){return byId(currentId);}
+function progressInfo(){if(phase==='main')return {label:`Câu ${mainPos+1} / ${questions.length}`,percent:mainPos/questions.length*100};return {label:`Vòng ôn ${retryRound} · Câu ${retryPos+1} / ${retryOrder.length}`,percent:retryOrder.length?retryPos/retryOrder.length*100:0};}
+function questionContent(q){
+ let s='<div class="question-head"><span class="pill">'+(q.type==='mcq'?'TRẮC NGHIỆM':'TỰ LUẬN · ĐIỀN ĐỘNG TỪ')+'</span><span class="pill">'+(phase==='main'?'Lượt đầu':'Vòng ôn lỗi')+'</span></div>';
+ s+='<h2 class="question-title">'+escapeHtml(q.sentence)+'</h2><p class="translation">'+escapeHtml(q.vi)+'</p>';
+ if(q.type==='mcq'){
+   s+='<div id="options">';q.options.forEach((op,i)=>{let cls='option';if((view==='explain'||view==='feedback')&&recentPick&&recentPick.value===op)cls+=' wrong';if(view==='feedback'&&op===q.answer)cls+=' right';let disabled=view!=='answer'?' disabled':'';s+='<button type="button" class="'+cls+'" data-choice="'+i+'"'+disabled+'><span class="letter">'+String.fromCharCode(65+i)+'</span><span>'+escapeHtml(op)+'</span></button>';});s+='</div>';
+ }else{
+   const disabled=view==='answer'?'':' disabled';let cls='answer-input';if(view==='explain')cls+=' input-wrong';if(view==='feedback')cls+=' input-wrong';
+   let shown = view==='answer'?'':escapeHtml(currentInput);
+   s+='<div class="blank-row"><label for="fillAnswer">Điền dạng đúng của động từ trong ngoặc:</label><input id="fillAnswer" class="'+cls+'" type="text" autocomplete="off" placeholder="Nhập câu trả lời bằng tiếng Anh" value="'+shown+'"'+disabled+'><p class="muted">Chỉ nhập phần còn thiếu, ví dụ: <b>studies</b>, <b>don’t eat</b>.</p></div>';
+   if(view==='answer')s+='<div class="actions"><button type="button" class="btn" id="submitFill">Kiểm tra đáp án</button></div>';
+ }
+ if(view==='answer')s+='<p class="muted">Nếu trả lời đúng, âm báo sẽ vang lên và câu tiếp theo tự mở. Nếu sai, bạn cần hoàn thành phần tự giải thích.</p>';
+ if(view==='explain')s+=explanationForm(q);
+ if(view==='feedback')s+=feedbackPanel(q);
+ return s;
+}
+function explanationForm(q){
+ let s='<section class="why-form"><div class="note bad"><b>Đáp án chưa đúng.</b><p>Phần chọn sai đã được đánh dấu đỏ. Trước khi xem lời giải, hãy trả lời đủ cả bốn câu hỏi bên dưới.</p></div><h3>Hãy giải thích cách bạn suy nghĩ</h3><p class="muted">Mọi ô đều bắt buộc. Câu trả lời sẽ được dùng để tạo phản hồi ngữ pháp tự động.</p>';
+ s+='<div class="field"><label for="whySubject">1. Chủ ngữ trong câu là gì? <span class="required">*</span></label><input id="whySubject" type="text" value="'+escapeHtml(lastSubject)+'" placeholder="Ví dụ: My brother" required></div>';
+ s+='<div class="field"><label for="whyNumber">2. Chủ ngữ đó thuộc số ít hay số nhiều? <span class="required">*</span></label><select id="whyNumber" required><option value="">-- Chọn một đáp án --</option><option value="singular" '+(lastNumber==='singular'?'selected':'')+'>Số ít</option><option value="plural" '+(lastNumber==='plural'?'selected':'')+'>Số nhiều</option><option value="unsure" '+(lastNumber==='unsure'?'selected':'')+'>Chưa chắc</option></select></div>';
+ s+='<div class="field"><label for="whyClue">3. Dấu hiệu trong câu là gì? <span class="required">*</span></label><input id="whyClue" type="text" value="'+escapeHtml(lastClue)+'" placeholder="Ví dụ: every Sunday / usually / sự thật hiển nhiên" required><small>Nếu không có từ chỉ thời gian rõ ràng, ghi căn cứ ngữ pháp hoặc ý nghĩa của câu.</small></div>';
+ s+='<div class="field"><label for="whyReason">4. Tại sao bạn chọn đáp án đó? <span class="required">*</span></label><textarea id="whyReason" placeholder="Hãy giải thích suy nghĩ của bạn, ví dụ: Em chọn plays vì em nghĩ chủ ngữ số nhiều nên động từ thêm -s..." required>'+escapeHtml(lastReason)+'</textarea><small>Không cần đoán đáp án hệ thống mong đợi. Hãy viết đúng lý do bạn thực sự đã nghĩ đến.</small></div>';
+ s+='<div id="explainError" class="error" role="alert">'+escapeHtml(explanationError)+'</div><div class="actions"><button type="button" class="btn" id="submitExplanation">Gửi lời giải thích và xem phản hồi</button></div></section>';return s;
+}
+function analyzeReason(q,reason,reportedSubject,reportedNumber,clue){
+ const r=normalize(reason), pick=recentPick?.value??'';let parts=[];
+ if(reportedSubject.trim()){
+   const ns=normalize(reportedSubject);const subjectMatches=q.subjectAliases.some(a=>ns===normalize(a)||ns.includes(normalize(a))||normalize(a).includes(ns));
+   parts.push(subjectMatches?`Bạn xác định chủ ngữ là “${q.subject}” — đúng.`:`Bạn ghi chủ ngữ là “${reportedSubject}”. Trong câu này, chủ ngữ chính cần xét là “${q.subject}”.`);
+ }
+ if(reportedNumber==='unsure')parts.push(`Bạn chưa chắc chủ ngữ thuộc loại nào. Ở đây “${q.subject}” là chủ ngữ ${q.number==='singular'?'số ít':'số nhiều'}.`);
+ else if(reportedNumber && reportedNumber!==q.number)parts.push(`Bạn xếp chủ ngữ vào loại ${reportedNumber==='singular'?'số ít':'số nhiều'}, nhưng “${q.subject}” trong câu này là chủ ngữ ${q.number==='singular'?'số ít':'số nhiều'}.`);
+ else if(reportedNumber)parts.push(`Bạn phân loại chủ ngữ là ${q.number==='singular'?'số ít':'số nhiều'} — đúng.`);
+ const clueN=normalize(clue);const clueMatch=q.clueAliases.some(a=>clueN.includes(normalize(a))||normalize(a).includes(clueN))&&clueN.length>1;
+ parts.push(clueMatch?`Bạn đã nhận ra dấu hiệu/căn cứ có liên quan: “${clue}”. Căn cứ trọng tâm ở câu này là ${q.clue}.`:`Bạn ghi dấu hiệu là “${clue}”. Hãy chú ý căn cứ trọng tâm: ${q.clue}.`);
+ let tailored='';
+ const hasAny=(arr)=>arr.some(x=>r.includes(normalize(x)));
+ if(hasAny(['them s','thêm s','them es','thêm es','s/es','add s','add -s','he she it','ngoi thu ba','ngôi thứ ba','số ít','so it','singular'])){
+   tailored=q.number==='singular'?`Lý do bạn nêu có vẻ liên quan đến quy tắc thêm -s/-es. Quy tắc này chỉ dùng trong câu khẳng định với chủ ngữ ngôi thứ ba số ít; nếu câu có do/does hoặc don't/doesn't, phải chú ý dạng động từ sau trợ động từ.`:`Bạn đang nghĩ đến quy tắc thêm -s/-es, nhưng chủ ngữ “${q.subject}” là số nhiều. Trong câu khẳng định, chủ ngữ số nhiều dùng động từ nguyên mẫu, không thêm -s.`;
+ }
+ if(!tailored&&hasAny(['do','does',"don't","doesn't",'dont','doesnt','tro dong tu','trợ động từ','nguyên mẫu','nguyen mau','base verb'])){
+   if(q.focus==='doesnt-base'||(q.type==='fill'&&normalize(q.answer).includes('doesnt'))||q.focus==='auxiliary'||q.focus==='do-does')tailored=`Bạn đang cân nhắc do/does hoặc don't/doesn't. Hãy chọn trợ động từ theo chủ ngữ: I/you/we/they dùng do/don't; he/she/it và danh từ số ít dùng does/doesn't. Sau does/doesn't, động từ chính trở về nguyên mẫu.`;
+   else tailored=`Điểm dễ nhầm là trợ động từ. Câu khẳng định với động từ thường không dùng do/does; câu phủ định và câu hỏi dùng do/does theo chủ ngữ, và động từ chính sau trợ động từ giữ nguyên mẫu.`;
+ }
+ if(!tailored&&hasAny(['every day','every sunday','usually','always','often','never','on saturdays','every morning','dấu hiệu','dau hieu','thói quen','thoi quen','habit','frequency','tan suat'])){
+   tailored=`Bạn có để ý đến dấu hiệu tần suất/thời gian. Dấu hiệu đó thường cho biết hành động lặp lại nên dùng hiện tại đơn; tuy nhiên, nó không tự quyết định thêm -s hay dùng do/does — phần đó phụ thuộc vào chủ ngữ và cấu trúc câu.`;
+ }
+ if(!tailored&&hasAny(['đang','dang','ing','present continuous','continuous','quá khứ','qua khu','past','yesterday'])){
+   tailored=`Có thể bạn đang nhầm với thì khác. Câu này diễn tả ${q.clue.toLowerCase()}, nên dùng hiện tại đơn; hãy dùng dấu hiệu thời gian cùng ý nghĩa câu để phân biệt với hành động đang diễn ra hoặc quá khứ.`;
+ }
+ if(!tailored){
+   tailored=`Bạn viết: “${reason.trim()}”. Đáp án bạn chọn là “${pick}”, nhưng quy tắc cần áp dụng ở đây là: ${q.rule}`;
+ }else{
+   tailored+=` Lý do bạn ghi là: “${reason.trim()}”.`;
+ }
+ parts.push(tailored);
+ parts.push(`Kết luận cho câu này: đáp án đúng là “${q.answer}”. ${q.rule}`);
+ return parts;
+}
+function feedbackPanel(q){
+ const analysis=analyzeReason(q,lastReason,lastSubject,lastNumber,lastClue);
+ let s='<div class="note bad"><b>Phản hồi tự động dựa trên lời giải thích của bạn</b>';
+ analysis.forEach(p=>s+='<p>'+escapeHtml(p)+'</p>');
+ s+='</div><div class="note good"><div class="correct-banner">Đáp án đúng: '+escapeHtml(q.answer)+'</div><p><b>Giải thích ngữ pháp:</b> '+escapeHtml(q.rule)+'</p><p><b>Ghi nhớ:</b> '+escapeHtml(q.focus==='doesnt-base'?'doesn’t + động từ nguyên mẫu.':q.focus==='do-does'?'Do/Does + chủ ngữ + động từ nguyên mẫu trong câu hỏi.':q.focus==='auxiliary'?'don’t/doesn’t + động từ nguyên mẫu.':q.focus==='plural'?'Chủ ngữ số nhiều + động từ nguyên mẫu.':q.focus==='have-has'?'Have dùng với I/you/we/they; has dùng với he/she/it hoặc danh từ số ít.':q.focus==='es'?'Động từ kết thúc bằng -ch, -sh, -s, -x, -o thường thêm -es.':q.focus==='be'?'I am; he/she/it is; you/we/they are.':q.focus==='fact'?'Hiện tại đơn dùng cho sự thật hiển nhiên/khoa học.':'He/She/It hoặc danh từ số ít: V-s/es trong câu khẳng định.')+'</p></div>';
+ s+='<div class="actions"><button type="button" class="btn" id="continueAfterWrong">'+(phase==='main'&&mainPos===questions.length-1?'Hoàn thành lượt đầu':'Tiếp tục')+' →</button></div>';return s;
+}
+function render(){
+ if(view==='start'){appStage.innerHTML='';return;}
+ if(view==='done'){renderSummary();return;}
+ const q=currentQ();if(!q){appStage.innerHTML='';return;}
+ const p=progressInfo();let h='<section class="card '+(view==='explain'?'question-red':'')+'"><div class="toolbar"><span class="pill">'+p.label+'</span><span class="pill">'+(everWrong.size?`Câu cần ôn: ${retrySet.size}`:'Chưa có câu sai')+'</span></div><div class="progress"><span style="width:'+Math.min(100,p.percent)+'%"></span></div>';
+ h+=questionContent(q);h+='<div class="footnote">Hiện tại đơn: <b>I/You/We/They + V</b>; <b>He/She/It + V-s/es</b>. Phủ định: <b>don’t/doesn’t + V nguyên mẫu</b>. Câu hỏi: <b>Do/Does + S + V nguyên mẫu?</b></div></section>';
+ appStage.innerHTML=h;attachEvents();
+}
+function attachEvents(){
+ document.querySelectorAll('[data-choice]').forEach(btn=>btn.addEventListener('click',()=>{
+   if(view!=='answer')return;const q=currentQ(),i=Number(btn.dataset.choice),value=q.options[i];recentPick={index:i,value};currentInput=value;evaluateAnswer(q,value);
+ }));
+ const fillBtn=document.getElementById('submitFill');if(fillBtn)fillBtn.addEventListener('click',()=>{const q=currentQ(),input=document.getElementById('fillAnswer');const val=input.value.trim();currentInput=val;if(!val){input.focus();return;}recentPick={index:-1,value:val};evaluateAnswer(q,val);});
+ const fillInput=document.getElementById('fillAnswer');if(fillInput)fillInput.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();document.getElementById('submitFill')?.click();}});
+ const expBtn=document.getElementById('submitExplanation');if(expBtn)expBtn.addEventListener('click',submitExplanation);
+ const cont=document.getElementById('continueAfterWrong');if(cont)cont.addEventListener('click',advanceAfterFeedback);
+}
+function evaluateAnswer(q,value){
+ if(isCorrect(q,value)){
+   if(phase==='main')firstCorrect.add(q.id);else retrySet.delete(q.id);
+   view='correct';beep();renderCorrect(q);if(timer)clearTimeout(timer);timer=setTimeout(advanceAfterCorrect,1450);
+ }else{
+   everWrong.add(q.id);wrongCounts[q.id]=(wrongCounts[q.id]||0)+1;retrySet.add(q.id);view='explain';explanationError='';lastSubject='';lastNumber='';lastClue='';lastReason='';render();
+ }
+}
+function renderCorrect(q){
+ const p=progressInfo();let h='<section class="card"><div class="toolbar"><span class="pill">'+p.label+'</span><span class="pill">Đúng ✓</span></div><div class="progress"><span style="width:'+Math.min(100,p.percent)+'%"></span></div>';
+ h+='<div class="note good"><div class="correct-banner">✓ Chính xác! Âm báo thành công.</div><h2 class="question-title">'+escapeHtml(q.sentence)+'</h2><p>'+escapeHtml(q.vi)+'</p><p><b>Đáp án:</b> '+escapeHtml(q.answer)+'</p><p><b>Giải thích:</b> '+escapeHtml(q.rule)+'</p><p class="muted">Tự chuyển sang câu tiếp theo…</p></div></section>';appStage.innerHTML=h;
+}
+function submitExplanation(){
+ const subj=document.getElementById('whySubject').value.trim(),num=document.getElementById('whyNumber').value,clue=document.getElementById('whyClue').value.trim(),reason=document.getElementById('whyReason').value.trim();
+ if(!subj||!num||!clue||!reason){explanationError='Bạn cần trả lời đầy đủ cả 4 câu hỏi trước khi xem phản hồi.';if(!subj)document.getElementById('whySubject').focus();else if(!num)document.getElementById('whyNumber').focus();else if(!clue)document.getElementById('whyClue').focus();else document.getElementById('whyReason').focus();render();return;}
+ lastSubject=subj;lastNumber=num;lastClue=clue;lastReason=reason;explanationError='';view='feedback';render();
+}
+function advanceAfterCorrect(){if(timer)clearTimeout(timer);timer=null;if(phase==='main'){mainPos++;if(mainPos>=questions.length){if(retrySet.size){beginRetry();return;}view='done';render();return;}currentId=questions[mainPos].id;}else{retryPos++;if(retryPos>=retryOrder.length){if(retrySet.size){beginRetryRound();return;}view='done';render();return;}currentId=retryOrder[retryPos];}view='answer';currentInput='';recentPick=null;render();}
+function advanceAfterWrong(){if(phase==='main'){mainPos++;if(mainPos>=questions.length){if(retrySet.size){beginRetry();return;}view='done';render();return;}currentId=questions[mainPos].id;}else{retryPos++;if(retryPos>=retryOrder.length){if(retrySet.size){beginRetryRound();return;}view='done';render();return;}currentId=retryOrder[retryPos];}view='answer';currentInput='';recentPick=null;lastSubject='';lastNumber='';lastClue='';lastReason='';render();}
+function advanceAfterFeedback(){advanceAfterWrong();}
+function beginRetry(){phase='retry';retryRound=1;retryOrder=[...retrySet];retryPos=0;currentId=retryOrder[0];view='answer';currentInput='';recentPick=null;showRoundIntro();}
+function beginRetryRound(){retryRound++;retryOrder=[...retrySet];retryPos=0;currentId=retryOrder[0];view='answer';currentInput='';recentPick=null;showRoundIntro();}
+function showRoundIntro(){appStage.innerHTML='<section class="card"><div class="note info"><h2>Đến vòng ôn lỗi '+retryRound+'</h2><p>Còn <b>'+retrySet.size+'</b> câu cần luyện lại. Các câu này sẽ tiếp tục quay lại qua những vòng sau cho đến khi bạn trả lời đúng.</p><p>Với câu trả lời sai, bạn sẽ phải trả lời lại cả bốn câu hỏi giải thích.</p><div class="actions"><button class="btn" id="startRetry">Bắt đầu vòng ôn</button></div></div></section>';document.getElementById('startRetry').addEventListener('click',render);}
+function renderSummary(){
+ const mastered=questions.length-retrySet.size;const pct=Math.round(firstCorrect.size/questions.length*100);const mistakes=[...everWrong].map(id=>byId(id)).filter(Boolean);
+ let h='<section class="summary"><div class="eyebrow">Kết quả luyện tập</div><h2>Hoàn thành 20 câu và vòng ôn</h2><div class="score-grid"><div class="score-box"><div class="muted">Đúng ngay lần đầu</div><div class="score-num">'+firstCorrect.size+'/20</div><div class="muted">'+pct+'%</div></div><div class="score-box"><div class="muted">Câu từng làm sai</div><div class="score-num">'+everWrong.size+'</div><div class="muted">Câu đã được ghi nhận</div></div><div class="score-box"><div class="muted">Câu đã nắm vững</div><div class="score-num">'+mastered+'/20</div><div class="muted">Đã đúng qua vòng ôn</div></div></div>';
+ h+='<div class="note good"><b>'+ (retrySet.size===0?'Bạn đã trả lời đúng tất cả câu hỏi!':'Bài luyện tập đã kết thúc.')+'</b><p>Những câu đã sai đều được lặp trong vòng ôn và hiện không còn câu nào chưa sửa được.</p></div>';
+ if(mistakes.length){h+='<h3>Các câu từng làm sai</h3><ul>';mistakes.forEach(q=>h+='<li><b>Câu '+q.id+':</b> '+escapeHtml(q.sentence)+'<br><span class="muted">Đáp án: '+escapeHtml(q.answer)+' · Số lần sai: '+(wrongCounts[q.id]||1)+'</span></li>');h+='</ul>';}
+ h+='<div class="note info"><b>Quy tắc cần nhớ</b><p>• Khẳng định: I/You/We/They + V; He/She/It + V-s/es.</p><p>• Phủ định: don’t/doesn’t + V nguyên mẫu.</p><p>• Câu hỏi: Do/Does + chủ ngữ + V nguyên mẫu?</p><p>• Dấu hiệu như usually, often, every day thường gợi ý thói quen; sự thật hiển nhiên cũng dùng hiện tại đơn.</p></div><div class="actions"><button class="btn" id="restartAll">Làm lại từ đầu</button><button class="btn secondary" id="reviewMistakes">Ôn riêng câu từng sai</button></div><p class="footnote">Phản hồi giải thích được tạo tự động trong file, dựa trên từ khóa và quy tắc đã lập trình; hệ thống không gửi câu trả lời của bạn lên Internet.</p></section>';
+ appStage.innerHTML=h;document.getElementById('restartAll').addEventListener('click',resetAll);document.getElementById('reviewMistakes').addEventListener('click',()=>{if(!everWrong.size){alert('Bạn chưa có câu nào sai ở lượt đầu.');return;}phase='retry';retryRound=1;retrySet=new Set(everWrong);retryOrder=[...retrySet];retryPos=0;currentId=retryOrder[0];view='answer';currentInput='';recentPick=null;showRoundIntro();});
+}
+function resetAll(){if(timer)clearTimeout(timer);started=false;phase='main';mainPos=0;currentId=questions[0].id;view='answer';retrySet=new Set();retryOrder=[];retryPos=0;retryRound=0;firstCorrect=new Set();everWrong=new Set();wrongCounts={};recentPick=null;feedbackText='';currentInput='';explanationError='';lastReason='';lastSubject='';lastNumber='';lastClue='';document.getElementById('heroPlaceholder');render();}
+document.getElementById('startBtn').addEventListener('click',()=>{started=true;phase='main';mainPos=0;currentId=questions[0].id;view='answer';appStage.scrollIntoView({behavior:'smooth',block:'start'});render();});
+})();
+</script>
+</body>
+</html>
